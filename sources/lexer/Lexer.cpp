@@ -163,11 +163,6 @@ bool Lexer::next_is(char c)
     return false;
 }
 
-bool Lexer::match(char c)
-{
-    return peek == c;
-}
-
 void Lexer::clean_peek()
 {
     peek = ' ';

@@ -34,8 +34,6 @@ private:
 
     bool next_is(char c);
 
-    bool match(char c);
-
     std::shared_ptr<Token> scan();
 
     void clean_peek();
