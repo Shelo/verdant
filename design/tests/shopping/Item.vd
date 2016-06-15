@@ -1,0 +1,10 @@
+class Item;
+
+string! name;
+int! cost;
+
+Item (string name, int cost)
+{
+    this.name = name;
+    this.cost = cost;
+}

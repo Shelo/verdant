@@ -1,0 +1,23 @@
+import "Item";
+
+class Shopping;
+
+Item[] items = [];
+
+void addItem (string name, float cost)
+{
+    items.append(new Item(name, cost));
+}
+
+Item[] getItemsAtPrice (float price)
+{
+    Item[] result = [];
+
+    for (Item item : items)
+    {
+        if (item.price == price)
+            result.append(item);
+    }
+
+    return result.lock();
+}
